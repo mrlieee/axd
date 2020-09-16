@@ -16,9 +16,9 @@ Q: Bisa, bahkan hingga puluhan ribu website
 A: Apakah AXD work?
 Q: Tergantung dari website vuln yang telah anda masukkan ke dalam file target.txt
  
-###Cara Install dan Penggunaan
+# Installation
 
-# Termux:
+* Termux:
 $ pkg install python2
 $ pip2 install requests
 $ pkg install git
@@ -26,7 +26,7 @@ $ git clone https://github.com/djunekz/axd
 $ cd axd
 $ python2 axd.py
 
-# Linux:
+* Linux:
 $ apt-get install python
 $ apt-get install pthon-pip
 $ pip install requests
@@ -35,8 +35,8 @@ $ git clone https://github.com/djunekz/axd
 $ cd axd
 $ python axd.py
 
-# Install Otomatis:
-pkg install python2 && pip2 install requests && pkg install git && git clone https://github.com/djunekz/axd && cd axd && python2 axd.py
-
 ~Penggunaan:
 * Masukkan file script deface anda kedalam folder axd, paste url website kedalam file target.txt (hanya url index (http://www.target.com, https://target.com)
+
+# Install Otomatis:
+pkg install python2 && pip2 install requests && pkg install git && git clone https://github.com/djunekz/axd && cd axd && python2 axd.py
