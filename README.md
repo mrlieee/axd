@@ -24,7 +24,7 @@ $ pip2 install requests
 $ pkg install git
 $ git clone https://github.com/djunekz/axd
 $ cd axd
-$ python2 axd.py
+$ python axd.py
 
 * Linux:
 $ apt-get install python
