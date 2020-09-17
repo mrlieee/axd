@@ -46,7 +46,7 @@ def axd(script,target_file="target.txt"):
       count = 0
 
       for x in range(101):
-          time.sleep(0.2)
+          time.sleep(0.8)
           print (f'\r\33[31m[\33[33m!\33[0m\33[31m]\33[0m Uploading file script \33[32m[{load}]\33[0m : \33[32m{x}\33[0m%', end='', flush=True)
           count += 1
           if count == 3:
