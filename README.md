@@ -43,5 +43,7 @@ $ python axd.py
 ```
 apt update && apt upgrade && pkg install python && pkg install git && pip2 install requests && git clone https://github.clm/djunekz/axd && cd axd && python axd.py
 ```
+**==> Run : $ `python axd.py`**
+
 # Penggunaan:
 Masukkan file script deface anda kedalam folder axd, paste url website kedalam file target.txt (hanya url index (http://www.target.com, https://target.com)
